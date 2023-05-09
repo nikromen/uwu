@@ -1,7 +1,7 @@
 on:
-  push:
-    tags:
-      - "*.*.*"
+  schedule:
+    # every day on 13:12
+    - cron: "12 13 * * *"
 
 jobs:
   build:
